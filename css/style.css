@@ -156,10 +156,14 @@ a {
     text-decoration: underline;
 }
 
+button:hover {
+    background-color: rgb(41, 177, 255);
+    transition: 1s;
+}
 .login__button {
     width: 100%;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 5rem;
     background-color: var(--button-color);
     font-weight: var(--font-medium);
     cursor: pointer;
