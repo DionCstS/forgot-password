@@ -1,0 +1,213 @@
+/*------------ GOOGLE FONTS -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*------------ VARIAVEIS CSS -------------*/
+:root {
+    /*------------ Cores -------------*/
+    /*------------ GOOGLE FONTS -------------*/
+    /*Color mode HSL(hue, saturation, Lightness)*/
+    --white-color:hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 0%);
+    --button-color: hsl(207, 67%, 55%);
+
+    /*-----------  Fonte e tipografia -------------*/
+    /*.5rem = 8px / 1 rem = 16px ...*/
+    --body-font: "Poppins" , sans-serif;
+    --h1-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+
+    /*------------ font weight -----------*/
+    --font-medium: 500;    
+}
+
+/*------------ BASE -------------*/
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+input,
+button{
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+
+body {
+    color: var(--black-color)
+}
+
+input {
+    border: solid .5px rgb(180, 180, 180);
+    border-radius: 5px;
+}
+input:hover {
+    border: solid .5px black;
+    transition: 0.3s;
+    
+}
+button{
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.p_dois {
+    padding-bottom: 1rem;
+}
+/*-------- LOGIN ---------*/
+
+.login {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+
+.login__form {
+    position: relative;
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.login__title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 2rem;
+}
+
+.login__content,
+.login__box{
+    display: grid;
+}
+
+.login__content {
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.login__box {
+    align-items: center;
+    column-gap: .75rem;
+
+}
+
+
+.login__input {
+    width: 100%;
+    padding-block: .8rem;
+    background: none;
+    color: var(--black-color);
+    position: relative;
+    z-index: 1;
+}
+
+.login__box-input {
+    position: relative;
+}
+
+.login__label {
+    font-weight: var(--font-medium);
+}
+
+
+.login__box:nth-child(2) input {
+    padding-right: 1.8rem;
+}
+
+.login__check,
+.login__check-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login__check {
+    margin-bottom: 1.5rem;
+}
+
+.login__check-label,
+.login__register{
+    font-size: var(--small-font-size);
+}
+
+.login__check-group {
+    column-gap: .5rem;
+}
+
+.login__check-input {
+    width: 16px;
+    height: 16px;
+}
+
+.login__forgot:hover {
+    text-decoration: underline;
+}
+
+.login__button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--button-color);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.login__register {
+    color: var(--black-color);
+    font-weight: var(--font-medium);
+}
+
+.login__register a:hover{
+    text-decoration: underline;
+}
+
+
+/* Input Focus move up label */
+
+
+/* Input focus sticky top label */
+
+ img {
+
+    width: 100%;
+    max-width: 300px;
+
+
+    /*
+    transform: translateX(-50%);
+    width: 100%;
+    
+    z-index: 0;*/
+}
+
+
+
+@media screen and (min-width: 576px){
+    .login {
+        justify-content: center;
+    }
+    .login__form {
+        width: 423px;
+        padding: 4rem 3rem 3.5rem;
+        border-radius: 1.5rem;   
+    }
+    .login__title {
+        font-size: 2rem;
+    }
+}
+
